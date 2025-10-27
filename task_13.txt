@@ -1,0 +1,33 @@
+/usr/src/app$ cd code-user
+git stash
+echo "Список задач:" > todo.md
+echo "stash не трогает новые файлы, которые еще не добавлены в индекс." >> hexlet.txt
+git add hexlet.txt
+git commit -m "Add stash information to hexlet.txt"
+git stash pop
+git add .
+git commit -m "Restore stashed changes and add todo.md"
+Saved working directory and index state WIP on main: 89d91f8 add index.html
+[main 1e9b3ad] Add stash information to hexlet.txt
+ 1 file changed, 1 insertion(+)
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        quotes.txt
+        todo.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (d08d389d8f0bab7e5f7933e0ca6b0971bcd19123)
+[main 0067afe] Restore stashed changes and add todo.md
+ 3 files changed, 7 insertions(+)
+ create mode 100644 quotes.txt
+ create mode 100644 todo.md
+/usr/src/app/code-user$ git status
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

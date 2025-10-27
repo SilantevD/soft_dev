@@ -1,0 +1,22 @@
+/usr/src/app$ cd code-user
+/usr/src/app/code-user$ ls -l
+total 8
+drwxr-xr-x 2 tirion root 4096 Oct  2 15:33 dir
+-rw-r--r-- 1 tirion root   13 Oct  2 15:33 hexlet.txt
+-rw-r--r-- 1 tirion root    0 Oct  2 15:33 index.md
+/usr/src/app/code-user$ git reset --hard HEAD
+HEAD is now at e511117 add index.html
+/usr/src/app/code-user$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dir/
+
+nothing added to commit but untracked files present (use "git add" to track)
+/usr/src/app/code-user$ ^C
+/usr/src/app/code-user$ git clean -fd
+Removing dir/
+/usr/src/app/code-user$ git status
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

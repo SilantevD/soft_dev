@@ -1,0 +1,13 @@
+/usr/src/app$ cd code-user
+/usr/src/app/code-user$ git add .
+/usr/src/app/code-user$ git commit --amend
+[main b026aab] add hexlet.txt
+ Date: Wed Oct 21 15:56:35 2020 +0700
+ 3 files changed, 4 insertions(+)
+ create mode 100644 hexlet.txt
+ create mode 100644 index.html
+ create mode 100644 todo.md
+/usr/src/app/code-user$ git status
+On branch main
+nothing to commit, working tree clean
+/usr/src/app/code-user$ 

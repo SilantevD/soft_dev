@@ -1,0 +1,36 @@
+/usr/src/app$ cd code-user
+git status
+git rm --cached notes.txt
+git rm --cached todo.md
+nano .gitignore
+git status
+git add .gitignore
+git commit -m "Exclude notes.txt and todo.md from tracking"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        todo.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+rm 'notes.txt'
+fatal: pathspec 'todo.md' did not match any files
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    notes.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+[main c53f06d] Exclude notes.txt and todo.md from tracking
+ 2 files changed, 4 insertions(+), 3 deletions(-)
+ create mode 100644 .gitignore
+ delete mode 100644 notes.txt
+/usr/src/app/code-user$ 

@@ -1,0 +1,11 @@
+cd code-user/code-user
+git add -i
+patch
+1
+
+s
+y
+n
+status
+quit
+git commit -m '+2/-0'

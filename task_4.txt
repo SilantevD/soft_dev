@@ -1,0 +1,8 @@
+cd code-user/code-user
+rm -f index.html
+git add index.html
+git commit -m 'Удален index.html'
+mv hexlet.txt hexlet2.txt
+git add hexlet.txt
+git add hexlet2.txt
+git commit -m 'Переименован hexlet.txt в hexlet2.txt'

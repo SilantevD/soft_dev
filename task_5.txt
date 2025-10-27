@@ -1,0 +1,53 @@
+/usr/src/app$ cd code-user
+/usr/src/app/code-user$ git log
+commit a83d69c31e5d9a9b0e0ccc7db7b02a435eb6c2de (HEAD -> main)
+Author: Student <support@hexlet.io>
+Date:   Tue Oct 13 22:05:47 2020 +0000
+
+    update hexlet2.txt
+
+commit 0ac5139b0c7a69ada91e685eeac6ab5a50995016
+Author: Student <support@hexlet.io>
+Date:   Mon Oct 12 22:39:20 2020 +0000
+
+    update files
+
+commit e511117979ed453211a1e41ddb0a35810b0c2bda
+/usr/src/app/code-user$ git show HEAD:hexlet2.txt
+Hexlet Hello!
+/usr/src/app/code-user$ git diff HEAD^ HEAD -- hexlet2.txt
+diff --git a/hexlet2.txt b/hexlet2.txt
+index 43e2f65..264a802 100644
+--- a/hexlet2.txt
++++ b/hexlet2.txt
+@@ -1 +1 @@
+-Hello Hexlet!
++Hexlet Hello!
+/usr/src/app/code-user$ nano hexlet2.txt
+/usr/src/app/code-user$ git diff HEAD^ HEAD -- hexlet2.txt
+diff --git a/hexlet2.txt b/hexlet2.txt
+index 43e2f65..264a802 100644
+--- a/hexlet2.txt
++++ b/hexlet2.txt
+@@ -1 +1 @@
+-Hello Hexlet!
++Hexlet Hello!
+/usr/src/app/code-user$ git add hexlet2.txt
+/usr/src/app/code-user$ git status
+git diff --staged
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hexlet2.txt
+
+diff --git a/hexlet2.txt b/hexlet2.txt
+index 264a802..43e2f65 100644
+--- a/hexlet2.txt
++++ b/hexlet2.txt
+@@ -1 +1 @@
+-Hexlet Hello!
++Hello Hexlet!
+/usr/src/app/code-user$ git commit -m "Откат изменений в hexlet2.txt"
+[main abcf55f] Откат изменений в hexlet2.txt
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+/usr/src/app/code-user$ 
